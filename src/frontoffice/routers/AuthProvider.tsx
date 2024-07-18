@@ -2,8 +2,8 @@
 import React, { useEffect } from "react";
 import { Navigate, useLocation } from "react-router-dom";
 import { useAppDispatch } from "../app/hooks";
-import { getData } from "../utils/storage";
 import { setAuth } from "../modules/Auth/Services/AuthSlice";
+import { getData } from "../../utils/storage";
 
 interface AuthContextType {
   user: any;
