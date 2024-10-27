@@ -1,6 +1,5 @@
 "use client";
 
-
 import { ArrowRight2 } from "iconsax-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
