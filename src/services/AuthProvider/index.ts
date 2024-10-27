@@ -20,7 +20,7 @@ const getUser = async () => {
 
   const config = {
     method: "get",
-    url: `users/${decoded.sub}`,
+    url: `admin/users/${decoded.sub}`,
   };
 
   return api(config);
@@ -51,7 +51,7 @@ const authProvider: AuthProvider = {
   login: ({ PhoneNumber, Password, status }) => {
     const config = {
       method: "post",
-      url: "auth/login",
+      url: "admin/auth/login",
       data: {
         PhoneNumber: PhoneNumber,
         Password: Password

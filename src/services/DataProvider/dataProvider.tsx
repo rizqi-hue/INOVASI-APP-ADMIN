@@ -118,6 +118,9 @@ const addTagsSearchSupport = (dataProvider: DataProvider) => ({
 
       return api(config).then(
         (res) => {
+
+          
+
           return Promise.resolve({
             data: res.data,
           });
@@ -129,8 +132,6 @@ const addTagsSearchSupport = (dataProvider: DataProvider) => ({
     }
 
     let form_data = new FormData();
-
-    console.log(params.data)
 
     for (let key in params.data) {
       if (key === "Image") {

@@ -1,6 +1,6 @@
 import { CircularProgress } from '@mui/material';
-import { NcImage } from './frontoffice/components';
-import Logo from "../src/frontoffice/assets/images/logo_secondary_white.png"
+import Logo from "../src/assets/images/logo_secondary_white.png"
+import { NcImage } from './components/atoms';
 
 const CustomLoading = () => (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', backgroundColor: '#f0f0f0' }}>

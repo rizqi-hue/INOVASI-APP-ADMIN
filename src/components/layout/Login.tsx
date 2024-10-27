@@ -32,7 +32,7 @@ const Login = () => {
         setLoading(true);
         login(
             auth,
-            location.state ? (location.state as any).nextPathname : '/dashboard'
+            location.state ? (location.state as any).nextPathname : '/admin/dashboard'
         ).catch((error: Error) => {
             setLoading(false);
             notify(

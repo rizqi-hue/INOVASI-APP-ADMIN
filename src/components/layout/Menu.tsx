@@ -42,7 +42,7 @@ type MenuName =
 
 // const UseGetMenu = (filterValues: any) => {
 
-//   const { data: referensi } = useGetList("menu", {
+//   const { data: referensi } = useGetList("admin/menu", {
 //     pagination: { perPage: 500, page: 1 },
 //     sort: { field: "id", order: "ASC" },
 //     filter: { ...filterValues },
@@ -109,14 +109,14 @@ const Menu = ({ dense = false }: MenuProps) => {
               dense={dense}
             >
               <MenuItemLink
-                to="/dashboard"
+                to="admin/dashboard"
                 state={{ _scrollToTop: true }}
                 primaryText={"Dashboard"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               <MenuItemLink
-                to="/user_profile"
+                to="admin/user_profile"
                 state={{ _scrollToTop: true }}
                 primaryText={"Profile"}
                 leftIcon={<AdjustOutlined />}
@@ -132,21 +132,21 @@ const Menu = ({ dense = false }: MenuProps) => {
               dense={dense}
             >
               <MenuItemLink
-                to="/slider"
+                to="admin/slider"
                 state={{ _scrollToTop: true }}
                 primaryText={"Slider"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               <MenuItemLink
-                to="/gallery/image"
+                to="admin/gallery/image"
                 state={{ _scrollToTop: true }}
                 primaryText={"Gambar"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               <MenuItemLink
-                to="/gallery/video"
+                to="admin/gallery/video"
                 state={{ _scrollToTop: true }}
                 primaryText={"Video"}
                 leftIcon={<AdjustOutlined />}
@@ -155,14 +155,14 @@ const Menu = ({ dense = false }: MenuProps) => {
             </SubMenu>
 
             <MenuItemLink
-              to="/perpustakaan"
+              to="admin/perpustakaan"
               state={{ _scrollToTop: true }}
               primaryText={"Perpustakaan"}
               leftIcon={<BookOnlineOutlined />}
               dense={dense}
             />
 
-            <SubMenu
+            {/* <SubMenu
               handleToggle={() => handleToggle("menuProfile")}
               isOpen={state.menuProfile}
               name="Profile"
@@ -170,27 +170,27 @@ const Menu = ({ dense = false }: MenuProps) => {
               dense={dense}
             >
               <MenuItemLink
-                to="/profile/definisi"
+                to="admin/profile/definisi"
                 state={{ _scrollToTop: true }}
                 primaryText={"Definisi"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               <MenuItemLink
-                to="/profile/selayang_pandang"
+                to="admin/profile/selayang_pandang"
                 state={{ _scrollToTop: true }}
                 primaryText={"Selayang Pandang"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               <MenuItemLink
-                to="/profile/struktur_organisasi"
+                to="admin/profile/struktur_organisasi"
                 state={{ _scrollToTop: true }}
                 primaryText={"Struktur Organisasi"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
-            </SubMenu>
+            </SubMenu> */}
 
             <SubMenu
               handleToggle={() => handleToggle("menuInovation")}
@@ -201,7 +201,7 @@ const Menu = ({ dense = false }: MenuProps) => {
             >
 
               <MenuItemLink
-                to="/inovation/pemerintah"
+                to="admin/inovation/pemerintah"
                 state={{ _scrollToTop: true }}
                 primaryText={"Inovasi"}
                 leftIcon={<AdjustOutlined />}
@@ -218,35 +218,35 @@ const Menu = ({ dense = false }: MenuProps) => {
               dense={dense}
             >
               <MenuItemLink
-                to="/information/regulasi"
+                to="admin/information/regulasi"
                 state={{ _scrollToTop: true }}
                 primaryText={"Regulasi"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               <MenuItemLink
-                to="/information/sop"
+                to="admin/information/sop"
                 state={{ _scrollToTop: true }}
                 primaryText={"SOP"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               <MenuItemLink
-                to="/information/rinduk"
+                to="admin/information/rinduk"
                 state={{ _scrollToTop: true }}
                 primaryText={"Rinduk"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               <MenuItemLink
-                to="/event/agenda"
+                to="admin/event/agenda"
                 state={{ _scrollToTop: true }}
                 primaryText={"Agenda"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               <MenuItemLink
-                to="/event/news"
+                to="admin/event/news"
                 state={{ _scrollToTop: true }}
                 primaryText={"Berita"}
                 leftIcon={<AdjustOutlined />}
@@ -257,38 +257,38 @@ const Menu = ({ dense = false }: MenuProps) => {
             <SubMenu
               handleToggle={() => handleToggle("menuKelitbangan")}
               isOpen={state.menuKelitbangan}
-              name="Kelitbangan"
+              name="Riset"
               icon={<AssessmentOutlined />}
               dense={dense}
             >
               <MenuItemLink
-                to="/researchscope"
+                to="admin/researchscope"
                 state={{ _scrollToTop: true }}
                 primaryText={"Ruang Lingkup"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               <MenuItemLink
-                to="/researchresult"
+                to="admin/researchresult"
                 state={{ _scrollToTop: true }}
                 primaryText={"Hasil Penelitian"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               <MenuItemLink
-                to="/indeces"
+                to="admin/indeces"
                 state={{ _scrollToTop: true }}
                 primaryText={"Data Index"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
-              <MenuItemLink
-                to="/indecesdetail"
+              {/* <MenuItemLink
+                to="admin/indecesdetail"
                 state={{ _scrollToTop: true }}
                 primaryText={"Data Index Detail"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
-              />
+              /> */}
             </SubMenu>
 
             <SubMenu
@@ -299,14 +299,14 @@ const Menu = ({ dense = false }: MenuProps) => {
               dense={dense}
             >
               <MenuItemLink
-                to="/usulanpenelitian"
+                to="admin/usulanpenelitian"
                 state={{ _scrollToTop: true }}
                 primaryText={"Usulan Penelitian"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               <MenuItemLink
-                to="/usulaninovasi"
+                to="admin/usulaninovasi"
                 state={{ _scrollToTop: true }}
                 primaryText={"Usulan Inovasi"}
                 leftIcon={<AdjustOutlined />}
@@ -322,14 +322,14 @@ const Menu = ({ dense = false }: MenuProps) => {
               dense={dense}
             >
               <MenuItemLink
-                to="/users"
+                to="admin/users"
                 state={{ _scrollToTop: true }}
                 primaryText={"User"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               {/* <MenuItemLink
-                to="/privilege"
+                to="admin/privilege"
                 state={{ _scrollToTop: true }}
                 primaryText={"User Akses"}
                 leftIcon={<AdjustOutlined />}
@@ -338,7 +338,7 @@ const Menu = ({ dense = false }: MenuProps) => {
             </SubMenu>
 
             <MenuItemLink
-              to="/message"
+              to="admin/message"
               state={{ _scrollToTop: true }}
               primaryText={"Pesan"}
               leftIcon={<MessageOutlined />}
@@ -353,28 +353,28 @@ const Menu = ({ dense = false }: MenuProps) => {
               dense={dense}
             >
               <MenuItemLink
-                to="/menu"
+                to="admin/menu"
                 state={{ _scrollToTop: true }}
                 primaryText={"Menu"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               <MenuItemLink
-                to="/referensi"
+                to="admin/referensi"
                 state={{ _scrollToTop: true }}
                 primaryText={"Referensi"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               <MenuItemLink
-                to="/footer"
+                to="admin/footer"
                 state={{ _scrollToTop: true }}
                 primaryText={"Footer"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               <MenuItemLink
-                to="/logo"
+                to="admin/logo"
                 state={{ _scrollToTop: true }}
                 primaryText={"Logo"}
                 leftIcon={<AdjustOutlined />}
@@ -386,7 +386,7 @@ const Menu = ({ dense = false }: MenuProps) => {
         ) : null
       ) : null}
 
-      {permissions ? (
+      {/* {permissions ? (
         permissions.includes("Dinas") ? (
           <>
             <SubMenu
@@ -397,14 +397,14 @@ const Menu = ({ dense = false }: MenuProps) => {
               dense={dense}
             >
               <MenuItemLink
-                to="/dashboard"
+                to="admin/dashboard"
                 state={{ _scrollToTop: true }}
                 primaryText={"Dashboard"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               <MenuItemLink
-                to="/user_profile"
+                to="admin/user_profile"
                 state={{ _scrollToTop: true }}
                 primaryText={"Profile"}
                 leftIcon={<AdjustOutlined />}
@@ -422,7 +422,7 @@ const Menu = ({ dense = false }: MenuProps) => {
             >
 
               <MenuItemLink
-                to="/inovation/pemerintah"
+                to="admin/inovation/pemerintah"
                 state={{ _scrollToTop: true }}
                 primaryText={"Inovasi"}
                 leftIcon={<AdjustOutlined />}
@@ -439,13 +439,13 @@ const Menu = ({ dense = false }: MenuProps) => {
               dense={dense}
             >
               <MenuItemLink
-                to="/researchresult"
+                to="admin/researchresult"
                 state={{ _scrollToTop: true }}
                 primaryText={"Hasil Penelitian"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
-            </SubMenu> */}
+            </SubMenu>
 
           </>
         ) : null
@@ -464,14 +464,14 @@ const Menu = ({ dense = false }: MenuProps) => {
               dense={dense}
             >
               <MenuItemLink
-                to="/dashboard"
+                to="admin/dashboard"
                 state={{ _scrollToTop: true }}
                 primaryText={"Dashboard"}
                 leftIcon={<AdjustOutlined />}
                 dense={dense}
               />
               <MenuItemLink
-                to="/user_profile"
+                to="admin/user_profile"
                 state={{ _scrollToTop: true }}
                 primaryText={"Profile"}
                 leftIcon={<AdjustOutlined />}
@@ -481,7 +481,7 @@ const Menu = ({ dense = false }: MenuProps) => {
 
 
             <MenuItemLink
-              to="/perpustakaan"
+              to="admin/perpustakaan"
               state={{ _scrollToTop: true }}
               primaryText={"Perpustakaan"}
               leftIcon={<BookOnlineOutlined />}
@@ -497,7 +497,7 @@ const Menu = ({ dense = false }: MenuProps) => {
               dense={dense}
             >
               <MenuItemLink
-                to="/researchresult"
+                to="admin/researchresult"
                 state={{ _scrollToTop: true }}
                 primaryText={"Hasil Penelitian"}
                 leftIcon={<AdjustOutlined />}
@@ -507,7 +507,7 @@ const Menu = ({ dense = false }: MenuProps) => {
 
           </>
         ) : null
-      ) : null}
+      ) : null} */}
     </Box>
   );
 };
