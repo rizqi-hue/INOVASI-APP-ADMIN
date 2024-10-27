@@ -3,10 +3,10 @@
 
 import { ArrowRight2 } from "iconsax-react";
 import { Link } from "react-router-dom";
-import { NcImage } from "../../../frontoffice/components";
-import { useAppDispatch, useAppSelector } from "../../../frontoffice/app/hooks";
 import { useEffect } from "react";
 import { getsEvent } from "./Event/Services/EventSlice";
+import { NcImage } from "../../atoms";
+import { useAppDispatch, useAppSelector } from "../../../app/hooks";
 
 const SuccessStories = () => {
 

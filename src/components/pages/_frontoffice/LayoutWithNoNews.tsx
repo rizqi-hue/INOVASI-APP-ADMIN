@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
 // import TopHeader from "../components/layouts/TopHeader";
 import { useEffect } from "react";
-import { useAppDispatch } from "../../../frontoffice/app/hooks";
-import Navbar from "../../../frontoffice/components/layouts/NavBar";
 import { getsReferensi } from "./ReferensiSlice";
 import Footer from "./Footer";
+import Navbar from "../../layout/NavBar";
+import { useAppDispatch } from "../../../app/hooks";
 // import { useAppSelector } from "../app/hooks";
 // import { Header, HeaderLogged } from "../components";
 

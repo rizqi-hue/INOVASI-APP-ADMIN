@@ -1,6 +1,5 @@
-import React from 'react'
-import { FadeRight, NcImage } from '../../../../../frontoffice/components'
-import Building from "../../../assets/images/building.jpg"
+import { NcImage } from "../../../../atoms"
+// import Building from "../../../assets/images/building.jpg"
 
 export default function Title() {
     return (
@@ -11,16 +10,16 @@ export default function Title() {
                 </div>
             </div>
             <div className="w-full md:w-1/2 relative z-10 px-4 sm:px-8 max-xl:py-5 max-lg:overflow-hidden">
-                <FadeRight>
-                    <h2 className="heading-2 text-gray-600">
-                        Riset dan Inovasi <br />
-                        Industri Halal
-                    </h2>
-                </FadeRight>
+                {/* <FadeRight> */}
+                <h2 className="heading-2 text-gray-600">
+                    Riset dan Inovasi <br />
+                    Industri Halal
+                </h2>
+                {/* </FadeRight> */}
 
             </div>
             <div className="w-1/2 max-md:hidden self-stretch h-18">
-                <NcImage src={Building} alt="love image" className="object-cover w-full h-full rounded-2xl" />
+                {/* <NcImage src={Building} alt="love image" className="object-cover w-full h-full rounded-2xl" /> */}
             </div>
         </section >
     )
