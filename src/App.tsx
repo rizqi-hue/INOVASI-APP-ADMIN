@@ -34,6 +34,7 @@ import user from "./components/pages/_admin/user";
 import usulaninovasi from "./components/pages/_admin/usulan/usulaninovasi";
 import usulanpenelitian from "./components/pages/_admin/usulan/usulanpenelitian";
 
+
 // provider
 import { Route } from "react-router";
 import CustomLoading from "./CustomLoading";
@@ -74,6 +75,7 @@ import useChangeThemeColor from "./useChangeThemeColor";
 import { getData } from "./utils/storage";
 import RisetAlatDeteksi from "./components/pages/_frontoffice/Infomation/Page/RisetAlatDeteksi";
 import RisetPrilakuKonsumen from "./components/pages/_frontoffice/Infomation/Page/RisetPrilakuKonsumen";
+import Register from "./components/layout/Register";
 
 // DINAS
 
@@ -165,6 +167,9 @@ const App = () => {
               <Route path="/proposed_innovation_ideas" element={<InovationProposal />} />
               <Route path="/proposed_innovation_ideas/create" element={<CreateInovationProposal />} />
             </Route>
+            
+            <Route path="/register" element={<Register />} />
+
             {/* <Route element={<LayoutRegister />}>
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
